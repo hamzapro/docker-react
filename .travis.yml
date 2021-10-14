@@ -6,8 +6,6 @@ services:
 before_install:
   - docker build -t hnaji/docker-react -f Dockerfile.dev .
 
-script:
-  - docker run hnaji/docker-react npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
